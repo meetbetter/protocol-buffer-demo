@@ -12,7 +12,7 @@ func main() {
 	person := &pb.Person{
 		Name:"Jack",
 		Age:18,
-		Hobby:[]string{"sing","dance","dance","rap"},
+		Hobby:[]string{"sing","dance","basketball","rap"},
 	}
 
 	binaryData, err := proto.Marshal(person)

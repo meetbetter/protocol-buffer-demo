@@ -130,6 +130,8 @@ type Person struct {
 在main函数中新建Person对象并进行序列化和反序列化，
 
 ```go
+package main
+
 import (
 	"protobufDemo/pb"
 	"github.com/golang/protobuf/proto"
@@ -142,7 +144,7 @@ func main() {
 	person := &pb.Person{
 		Name:"Jack",
 		Age:18,
-		Hobby:[]string{"sing","dance","dance","rap"},
+		Hobby:[]string{"sing","dance","basketball","rap"},
 	}
 
 	binaryData, err := proto.Marshal(person)
@@ -160,12 +162,15 @@ func main() {
 	fmt.Println("序列化前的原始数据:",person)
 	fmt.Println("反序列化得到数据:",newPerson)
 }
+
 ```
+
+
 
 执行后可以看到person和newPerson都喜欢**唱、跳、篮球和rap**。
 
 ```shell
-序列化前的原始数据: name:"Jack" age:18 hobby:"sing" hobby:"dance" hobby:"dance" hobby:"rap" 
-反序列化得到数据: name:"Jack" age:18 hobby:"sing" hobby:"dance" hobby:"dance" hobby:"rap" 
+序列化前的原始数据: name:"Jack" age:18 hobby:"sing" hobby:"dance" hobby:"basketball" hobby:"rap" 
+反序列化得到数据: name:"Jack" age:18 hobby:"sing" hobby:"dance" hobby:"basketball" hobby:"rap"
 ```
 
