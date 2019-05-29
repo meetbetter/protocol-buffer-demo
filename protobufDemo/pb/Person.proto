@@ -1,0 +1,14 @@
+syntax = "proto3"; //必须指定protobuf协议版本号
+package pb; //包名
+
+//定义一个protobuf协议
+message Person {
+    string name = 1; //数字表示序号，并不是变量值.
+    int32 age = 2;
+    repeated string hobby = 3; //对应go中[]string
+
+}
+
+message PhoneNum {
+    string Phone = 1;
+}
