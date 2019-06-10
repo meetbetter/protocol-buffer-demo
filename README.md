@@ -2,7 +2,7 @@
 
 [Demo源码](https://github.com/meetbetter/protocol-buffer-demo)
 
-protocol buffer是谷歌推出的高效率序列化反序列化工具，可读性也不错，可以自定义数据结构，然后使用对应语言的代码生成器生成的代码读写这个数据结构。虽然在和前端打交道时还是要配合使用JSON，但是在后端内部可以尝试使用protocol buffer改进性能。
+protocol buffer是谷歌推出的高效率序列化反序列化工具，可以自定义数据结构，然后使用对应语言的代码生成器生成的代码读写这个数据结构。虽然在和前端打交道时还是要配合使用JSON，但是在后端内部可以尝试使用protocol buffer改进性能。
 
 下面总结下在GoLang中使用protocol buffer的方法。
 
