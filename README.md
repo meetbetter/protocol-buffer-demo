@@ -58,7 +58,9 @@ protoc -h
 
 
 
-## 获取 GoLang的proto包
+## 获取 GoLang的protobuf包
+
+由于protocol buffer原生不支持go语言，需要下载golang的protobuf插件。
 
 ###  (1)下载
 

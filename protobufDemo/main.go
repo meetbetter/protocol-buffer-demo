@@ -20,6 +20,8 @@ func main() {
 		fmt.Println("proto.Marshal err:",err)
 	}
 
+	//为方便测试，序列化和反序列化在同一个程序实现
+
 	//反序列化
 	newPerson := &pb.Person{}
 	err = proto.Unmarshal(binaryData,newPerson)
